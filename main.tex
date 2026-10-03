@@ -422,19 +422,19 @@ A1 Number contamination & -- & -- & X & X & -- & X & X & X & -- \\
 A2 Reference adjustment & X & X & -- & -- & -- & -- & -- & -- & X \\
 A3 Number withholding   & -- & -- & X & X & -- & X & X & X & -- \\
 B1 Dev authority        & -- & -- & -- & X & N/A & -- & X & -- & -- \\
-B2 Examine signals      & -- & -- & -- & -- & N/A & -- & X & X & -- \\
-B3 Pattern scepticism   & -- & -- & -- & X & N/A & X & X & X & -- \\
-B4 Contextual dismissal & -- & -- & -- & X & N/A & X & X & X & X \\
+B2 Examine signals      & -- & -- & X & X & N/A & X & X & X & -- \\
+B3 Pattern scepticism   & -- & -- & X & X & N/A & X & X & X & -- \\
+B4 Contextual dismissal & -- & -- & -- & X & N/A & X & X & X & -- \\
 C1 Transparency trust   & X & X & X & X & X & X & X & X & X \\
-C2 Track record         & -- & -- & X & X & -- & X & X & X & X \\
-C3 Human final          & X & X & X & X & X & X & X & X & X \\
+C2 Track record         & -- & -- & X & X & X & X & X & X & -- \\
+C3 Human final          & X & -- & X & X & X & X & X & X & X \\
 C4 Facilitator mediator & -- & -- & X & X & -- & X & X & X & -- \\
-C5 Contextual applicab. & -- & -- & X & -- & -- & X & X & X & X \\
+C5 Contextual applicab. & -- & -- & X & X & -- & X & X & X & X \\
 \bottomrule
 \end{tabular}
 \end{table}
 
-Table~\ref{tab:saturation} shows the distribution of the twelve codes across the nine participants. Because all interviews were completed before coding began, the table shows code coverage and is not a saturation analysis. B1 is coded where a participant recounted a real incident in which a developer dismissed an AI warning by asserting familiarity (P4 and P7); no participant displayed the pattern in their own vignette response. P1 and P2 sided partly or fully with the developer in Vignette~B, but for reasons that meet neither the B1 nor the B4 definition: P1 proposed adding time to examine the AI tool's concern, and P2 accepted that the AI tool might be right but preferred the developer to learn from the outcome. These responses are reported in Section~\ref{sec:rq1a} but are not coded B1--B4.
+Table~\ref{tab:saturation} shows the distribution of the twelve codes across the nine participants. Because all interviews were completed before coding began, the table shows code coverage and is not a saturation analysis. B1 is coded where a participant recounted a real incident in which a developer dismissed an AI warning by asserting familiarity (P4 and P7); no participant displayed the pattern in their own vignette response. P1, P2 and P9 sided partly or fully with the developer in Vignette~B, but for reasons that meet neither the B1 nor the B4 definition: P1 proposed adding time to examine the AI tool's concern; P2 accepted that the AI tool might be right but preferred the developer to learn from the outcome; and P9 gave the developer ``the better say'' because of prior work on a similar task while still seeking a middle ground. P9's response is the closest to B1 in the data, but it does not dismiss the AI tool's flag. These responses are reported in Section~\ref{sec:rq1a} but are not coded B1--B4.
 
 \textbf{Phase 6: HACO mapping and model construction.} The twelve codes were mapped deductively onto the four HACO meta-dimensions~\cite{dubey2020haco}, and the model was constructed from the mapped codes. This phase departs from the final phase described by Braun and Clarke and is reported in Section~\ref{sec:model_construction}.
 
@@ -467,7 +467,7 @@ P8, 15:27 [Part 2, Vignette B, Q9 follow-up]: ``we got two signals pointing in d
 \midrule
 P6, 13:27 [Part 2, Vignette B]: ``A story that looks similar on the surface may be touching a completely different infrastructure'' & questions whether AI patterns apply to current context & B3: Pattern match scepticism \\
 \midrule
-P4, 22:28 [Part 2, Vignette B]: P4 described asking the developer to walk through what makes the current story different from the ones the tool is flagging. (Paraphrase used.) & requests concrete basis before override & B4: Legitimate contextual dismissal \\
+P4, 22:28 [Part 2, Vignette B, Q9]: ``The developers [sic] confidence carries real weight for me if they can articulate the basis for it'' & override accepted when a concrete basis is given & B4: Legitimate contextual dismissal \\
 \midrule
 P6, 22:07 [Part 3]: ``The explanation needs to be a sentence, maybe 2. [\ldots] That's enough. I don't need the [model] weights'' & transparency of reasoning drives trust & C1: Transparency drives trust \\
 \midrule
@@ -610,7 +610,7 @@ P6 offered a contextual challenge to the AI tool's evidence base [Part 2, Vignet
 
 No participant displayed B1 in their own Vignette~B response. The evidence for the pattern comes from two real incidents recounted during Vignette~B follow-up questions. P4 described a case in which a developer rejected an AI warning [Part 2, Vignette B, Q10, 23:30]: \textit{``the developer pushed back the AI warning and the team sided with him. We kept the original estimate. The story ran about like, I would say, 45\% over.''} P4 reflected [23:48]: \textit{``In the retrospect, the tool was picking up something real,''} and said the experience changed their facilitation approach. P7 described an incident from their team's AI pilot [Part 2, Vignette B, Q10, 40:29]: the tool flagged a story as high risk, and the assigned developer, \textit{``very experienced and knew that part of the system for years,''} \textit{``pushed back hard''}; \textit{``the team sided with him and we kept the original estimate anyway,''} and \textit{``the story took roughly double the time.''} In both incidents the participant describes the pattern in others, not in their own reasoning.
 
-Two participants sided with the developer for reasons that fall outside the B1 and B4 definitions. P2 argued that the long-term learning value of letting the developer own the estimate outweighed one story's accuracy, while accepting that the AI tool might be right [Part 2, Vignette B, Q9, 18:20]. P1 said they would err on the side of caution and add time to examine the AI tool's concern [Part 2, Vignette B, Q9, 40:40]. Neither response is coded B1 or B4.
+The three participants outside the Scrum Master role who received Vignette~B sided partly or fully with the developer, for reasons that fall outside the B1 and B4 definitions. P2 argued that the long-term learning value of letting the developer own the estimate outweighed one story's accuracy, while accepting that the AI tool might be right [Part 2, Vignette B, Q9, 18:20]. P1 said they would err on the side of caution and add time to examine the AI tool's concern [Part 2, Vignette B, Q9, 40:40]. P9 said [Part 2, Vignette B, Q9, 12:29]: \textit{``the developer knows better. He has previously worked on a similar task. So even if the AI is recommending something, we should find a middle ground, but developer should have the better say compared to AI.''} P9's response is the closest to the dismissal pattern in the data, but it still seeks a middle ground rather than dismissing the flag. None of the three responses is coded B1 or B4. All five Scrum Masters, by contrast, described asking both the developer and the tool for their basis (B2).
 
 The key distinction drawn in the analysis is between legitimate dismissal with concrete evidence that the AI tool's patterns do not apply, and unjustified dismissal through assertion of domain knowledge without articulating a specific basis.
 
@@ -631,7 +631,7 @@ The number-withholding practice is one of the most consistent findings of this s
 
 The dismissal-without-engagement pattern was described as manifesting primarily as \textit{developer authority assertion}: invoking domain expertise to dismiss an AI tool flag without articulating a specific basis for doing so, as in the incidents recounted by P4 and P7.
 
-Experienced facilitators described challenging this pattern in their vignette responses. P8 [Part 2, Vignette B, Q9 follow-up, 16:04]: \textit{``I still want them to articulate the specific differences.''} P4 [Part 2, Vignette B, Q9, 22:28] described asking the developer to walk through what makes the current story different from the ones the tool is drawing on. (Paraphrase used; automated transcript has a grammatical error at this point.) P7 [Part 2, Vignette B, Q9, 37:02]: \textit{``my job is to make sure that the team has examined both inputs properly and not to decide which is right.''}
+All five Scrum Masters described challenging this pattern in their vignette responses by asking both sources for their basis (B2). P3 [Part 2, Vignette B, Q9, 28:33]: \textit{``Can you just tell us what makes this one particularly different from the stories the tool is pointing to?''} P8 [Part 2, Vignette B, Q9 follow-up, 16:04]: \textit{``I still want them to articulate the specific differences.''} P4 [Part 2, Vignette B, Q9, 22:28] described asking the developer to walk through what makes the current story different from the ones the tool is drawing on. (Paraphrase used; automated transcript has a grammatical error at this point.) P7 [Part 2, Vignette B, Q9, 37:02]: \textit{``my job is to make sure that the team has examined both inputs properly and not to decide which is right.''}
 
 A secondary manifestation was \textit{pattern match scepticism}: questioning whether the AI tool's historical patterns apply to the current context. P8 described checking whether the AI tool was drawing on data from when the team was smaller and the codebase less stable [Part 2, Vignette B, Q9, 14:24]. This is calibrated scepticism that engages with the evidence rather than dismissing it outright.
 
@@ -647,7 +647,8 @@ Manifestation & Participants & Evidence type \\
 Reference-point adjustment from AI figure & P1, P2, P9 (3/9; P2 clearest) & Part 2 Vignette A \\
 Number withholding as safeguard & P3, P4, P6, P7, P8 (5/9) & Part 2 Vignette A; comparable practice in own team described by P3, P7, P8 \\
 Developer authority assertion & P4, P7 (recounted incidents) & Part 2 Vignette B follow-up \\
-Pattern match scepticism & P4, P6, P7, P8 & Part 2 Vignette B \\
+Examine both signals (safeguard) & P3, P4, P6, P7, P8 (5/8) & Part 2 Vignette B \\
+Pattern match scepticism & P3, P4, P6, P7, P8 (5/8) & Part 2 Vignette B \\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -662,7 +663,7 @@ P6 was specific about what level of explanation was sufficient [Part 3, Q14, 22:
 
 Transparency enables calibration. Practitioners can only assess whether an AI tool's evidence applies to their specific context if they can see what that evidence is.
 
-\textit{Track record over time} was the second trust driver, described by six participants (P3, P4, P6, P7, P8, P9). P3 said a tool \textit{``would need to have been right for my team specifically over a period''} [Part 3, Q12, 35:07], and P7 said \textit{``I want at least like 10 to 15 sprints of track records with us''} [Part 3, Q12, 45:20]. P4's real incident, in which the AI tool was right when the team dismissed it, directly changed P4's facilitation practice. Trust is not static; it is updated by experience.
+\textit{Track record over time} was the second trust driver, described by six participants (P3, P4, P5, P6, P7, P8). P3 said a tool \textit{``would need to have been right for my team specifically over a period''} [Part 3, Q12, 35:07], and P7 said \textit{``I want at least like 10 to 15 sprints of track records with us''} [Part 3, Q12, 45:20]. P4's real incident, in which the AI tool was right when the team dismissed it, directly changed P4's facilitation practice. Trust is not static; it is updated by experience.
 
 \textit{Contextual applicability} was the third driver. Participants consistently described assessing whether the AI tool's historical patterns applied to current conditions before deciding how much weight to give a recommendation.
 
@@ -694,10 +695,10 @@ This model is designed to reduce anchoring risk structurally. Withholding the AI
 Condition & Direction & Participants & Evidence type \\
 \midrule
 Transparency of reasoning & Drives trust up & P1--P9 (9/9) & Part 2 + Part 3 \\
-Track record over time & Drives trust up & P3, P4, P6, P7, P8, P9 & Part 2 Vignette B + Part 3 \\
-Contextual applicability & Drives trust up & P3, P6, P7, P8, P9 & Part 2 + Part 3 \\
+Track record over time & Drives trust up & P3, P4, P5, P6, P7, P8 & Part 2 Vignette B + Part 3 \\
+Contextual applicability & Drives trust up & P3, P4, P6, P7, P8, P9 & Part 2 + Part 3 \\
 Recommendation without explanation of basis & Drives trust down & P2, P4, P6, P7, P8 & Part 3 \\
-Inapplicable historical patterns & Drives trust down & P3, P6, P8, P9 & Part 2 + Part 3 \\
+Inapplicable historical patterns & Drives trust down & P3, P4, P6, P8, P9 & Part 2 + Part 3 \\
 Lack of experience with the tool & Leaves trust uncalibrated & P3, P9 & Part 1 + Part 2 \\
 \bottomrule
 \end{tabular}
@@ -724,13 +725,13 @@ The relationship between Principle~1 and planning poker deserves direct engageme
 
 \textbf{Principle 2, reasoning transparency requirement:} AI tool recommendations must include their basis: which specific past stories, what patterns, what went wrong. Transparency of reasoning was identified as a trust condition by all nine participants. P6 described it as non-negotiable; P7 called it table stakes. The required level is modest: one or two sentences that the facilitator can restate to the team in plain language, not model weights. The plain-language test was proposed by P8 during validation.
 
-\textbf{Principle 3, examine both signals:} When the AI tool and a developer disagree, neither is dismissed without examination. The facilitator asks both sources to articulate their basis. P8 [Part 2, Vignette B, Q9 follow-up, 15:27]: \textit{``we got two signals pointing in different directions. Let's spend 2 minutes making sure {[}\ldots{]} we understand both before we move on.''} P7 and P8 directly described the examine-both-signals safeguard; related evidence-checking responses from P4 and P6 also informed the principle.
+\textbf{Principle 3, examine both signals:} When the AI tool and a developer disagree, neither is dismissed without examination. The facilitator asks both sources to articulate their basis. P8 [Part 2, Vignette B, Q9 follow-up, 15:27]: \textit{``we got two signals pointing in different directions. Let's spend 2 minutes making sure {[}\ldots{]} we understand both before we move on.''} All five Scrum Masters described this safeguard in their Vignette~B responses (5/8, code B2); P4 put it most directly [Part 2, Vignette B, Q9, 22:28]: \textit{``My instinct is to ask both the tool and the developer to be more specific.''}
 
 \textbf{Principle 4, explicit override justification:} When the team overrides an AI tool recommendation, the reason must be stated concretely. Not ``the tool does not know our codebase'' but ``the tool is drawing on stories from two years ago before we refactored the legacy module.'' This applies equally when a recommendation is set aside by simply not applying it, a case P4 raised during validation.
 
-Principle~4 has the weakest evidential base of the five principles, with two of eight Vignette B participants describing it as a deliberate practice in their vignette responses. Its inclusion in the model requires justification. Two arguments support it. First, the underlying behaviour (requiring articulated evidence before accepting an override) appears more broadly across the B4 codes in the data. Second, a model that addresses the gap between observed and appropriate behaviour is more useful than one that only reflects the most common behaviour. The evidence count of 2/8 (Vignette B participants) is stated transparently so readers can assess the principle's grounding themselves.
+Principle~4 has the weakest evidential base of the five principles, with two of eight Vignette~B participants describing explicit override reasons as a deliberate practice: P7 [Part 2, Vignette B, follow-up, 39:35] and P8 [Part 3, 22:09]. Its inclusion in the model requires justification. Two arguments support it. First, the underlying behaviour (requiring articulated evidence before accepting an override) appears more broadly across the B4 codes in the data. Second, a model that addresses the gap between observed and appropriate behaviour is more useful than one that only reflects the most common behaviour. The evidence count of 2/8 (Vignette B participants) is stated transparently so readers can assess the principle's grounding themselves.
 
-\textbf{Principle 5, human final authority:} The final sprint commitment is always made by the team. The AI tool informs; humans decide. This was stated by all nine participants (code C3), in Part~2 and Part~3 responses. P9 [Part 2, Vignette B, Q9, 13:00]: \textit{``We should definitely take the inputs from AI, but human should be the final one to decide.''} During validation, P6 extended the principle: the reasoning behind the commitment, not only the commitment itself, must remain the team's.
+\textbf{Principle 5, human final authority:} The final sprint commitment is always made by the team. The AI tool informs; humans decide. This was stated by eight of nine participants (code C3), in Part~2 and Part~3 responses. P2 was the exception: asked who should have the final say, P2 answered that the team's process should, accepted that an AI recommendation could be adopted if discussion supported it, and named only individual feedback as a decision AI should not make [Part 2, Vignette A, Q8, 16:26; Part 3, Q15, 22:08]. P9 [Part 2, Vignette B, Q9, 13:00]: \textit{``We should definitely take the inputs from AI, but human should be the final one to decide.''} During validation, P6 extended the principle: the reasoning behind the commitment, not only the commitment itself, must remain the team's.
 
 \subsection{Component 3: Risk Identification Checklist}
 
@@ -779,11 +780,11 @@ Figure~\ref{fig:model} functions as a process map for a sprint planning facilita
 \draw[->, >=stealth, thick] (z2) -- (z3);
 
 \node[hd, below=5mm of z2] (h2) {Component 2: Interaction principles};
-\node[prin, below=3mm of h2] (p3) {\textbf{IP3}\\ Examine both signals\\[3pt] 2/8 (B2)};
+\node[prin, below=3mm of h2] (p3) {\textbf{IP3}\\ Examine both signals\\[3pt] 5/8 (B2)};
 \node[prin, below=3mm of h2, xshift=-4.6cm] (p1) {\textbf{IP1}\\ Number withholding\\[3pt] 5/9 (A3)};
 \node[prin, below=3mm of h2, xshift=-2.3cm] (p2) {\textbf{IP2}\\ Reasoning transparency\\[3pt] 9/9 (C1)};
 \node[prin, below=3mm of h2, xshift=2.3cm] (p4) {\textbf{IP4}\\ Explicit override reason\\[3pt] 2/8 (partly normative)};
-\node[prin, below=3mm of h2, xshift=4.6cm] (p5) {\textbf{IP5}\\ Human final authority\\[3pt] 9/9 (C3)};
+\node[prin, below=3mm of h2, xshift=4.6cm] (p5) {\textbf{IP5}\\ Human final authority\\[3pt] 8/9 (C3)};
 \node[below=1.5mm of p3, align=center, text width=10cm, font=\tiny] (note) {Counts are participants coded out of the applicable denominator (Vignette~B: $n=8$). Principles are numbered, not ranked.};
 
 \node[hd, below=3mm of note] (h3) {Component 3: Risk identification checklist};
@@ -1024,7 +1025,7 @@ Anchoring risk is described as manifesting through reference-point adjustment: w
 
 \textbf{RQ2: How do Agile practitioners describe trust calibration in AI tools when delegating planning tasks, and what conditions do they identify as leading to overtrust or distrust?}
 
-Trust calibration was described as shaped by three conditions practitioners identified: transparency of AI tool reasoning (all nine participants), track record over time (six) and contextual applicability of historical patterns (five). The five Scrum Masters described a facilitator-as-mediator arrangement, in which the AI tool informs the facilitator privately before the session and the facilitator decides what to bring to the team and how to frame it.
+Trust calibration was described as shaped by three conditions practitioners identified: transparency of AI tool reasoning (all nine participants), track record over time (six) and contextual applicability of historical patterns (six). The five Scrum Masters described a facilitator-as-mediator arrangement, in which the AI tool informs the facilitator privately before the session and the facilitator decides what to bring to the team and how to frame it.
 
 \textbf{RQ3: What practitioner-informed principles can be proposed for structuring Human-AI collaboration in Agile sprint planning while preserving human oversight?}
 
