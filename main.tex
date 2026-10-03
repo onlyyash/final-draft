@@ -65,29 +65,36 @@ Faculty of \faculty, Blekinge Institute of Technology, 371 79 Karlskrona, Sweden
 
 {\pagestyle{empty}
 \changepage{3cm}{1cm}{-0.5cm}{-0.5cm}{}{-1.5cm}{}{}{}
-{\small
 \noindent
-This thesis is submitted to the Faculty of \faculty\ at Blekinge Institute of Technology in partial fulfillment of the requirements for the degree of \thesisDegree. The thesis is equivalent to \thesisWeeks\ weeks of full-time studies.
-\vspace{0.8cm}
+This thesis is submitted to the Faculty of \faculty\ at Blekinge Institute of Technology in partial fulfilment of the requirements for the degree of \thesisDegree. The thesis is equivalent to \thesisWeeks\ weeks of full-time studies.
+
+\vspace{0.5cm}
 \noindent
-The authors declare that they are the sole authors of this thesis and that they have not used any sources other than those listed in the bibliography and identified as references. They further declare that they have not submitted this thesis at any other institution to obtain a degree.}
+The authors declare that they are the sole authors of this thesis and that they have not used any sources other than those listed in the bibliography and identified as references. They further declare that they have not submitted this thesis at any other institution to obtain a degree.
+
 \vspace{1.5cm}
 \noindent
-Contact Information:\\
+Contact Information:\\[6pt]
 Author(s):\\
 \authorFirst\\
-E-mail: \authorFirstMail\\
-\\
+E-mail: \authorFirstMail\\[6pt]
 \authorSecond\\
-E-mail: \authorSecondMail\\
-\vspace{1.2cm}
+E-mail: \authorSecondMail
 
-\noindent University advisor:\\
+\vspace{1cm}
+\noindent
+University advisor:\\
 \super\\
-Department of \superAffiliation\\
+Department of \superAffiliation
+
 \vspace*{\fill}
 \noindent\rule{\textwidth}{0.4pt}\\[4pt]
-{\small Faculty of \faculty\ $\cdot$ Blekinge Institute of Technology $\cdot$ SE--371 79 Karlskrona, Sweden \quad www.bth.se \quad +46~455~38~50~00}
+{\small\noindent
+\begin{tabular}{@{}l@{\hspace{1.5cm}}l@{}}
+Faculty of \faculty & Internet: www.bth.se \\
+Blekinge Institute of Technology & Phone: +46 455 38 50 00 \\
+SE--371 79 Karlskrona, Sweden & \\
+\end{tabular}}
 \clearpage}
 
 \setcounter{page}{1}
@@ -193,7 +200,7 @@ Four research questions guide the study:
   \item \textbf{RQ3 (Constructive):} What practitioner-informed principles can be proposed for structuring Human-AI collaboration in Agile sprint planning while preserving human oversight?
 \end{itemize}
 
-RQ1a and RQ1b examine practitioner accounts of bias risks in AI-assisted planning. RQ2 examines the Human-AI relationship dynamic that either enables or undermines effective collaboration. RQ3 turns outward: given what we learn from RQ1 and RQ2, what should a collaboration model specify?
+RQ1a and RQ1b examine practitioner accounts of bias risks in AI-assisted planning. They differ in the evidence they draw on: RQ1a concerns how practitioners describe the risks, in accounts of real planning and in reactions to the vignettes (codes A1 and B1), while RQ1b concerns the reasoning visible in participants' own vignette responses, that is, how they handle the AI figure and the disagreement (codes A2, A3 and B2--B4). RQ2 examines the Human-AI relationship dynamic that either enables or undermines effective collaboration. RQ3 turns outward: given what we learn from RQ1 and RQ2, what should a collaboration model specify?
 
 \section{Thesis Outline}
 
@@ -219,6 +226,8 @@ Empirical research has documented persistent challenges with sprint planning. Ma
 \subsection{The Scrum Master as Facilitator}
 
 Scrum introduces the Scrum Master role, described in Agile literature as a servant leader who facilitates the team's functioning, promotes Scrum practices, and removes obstacles to delivery. Shastri et al.~\cite{shastri2021spearheading} conducted a Grounded Theory study with 39 practitioners and 47 survey respondents and found that the Scrum Master's everyday activities encompass facilitating, mentoring, negotiating, process adapting, coordinating, and protecting the team. They also found a positive association between the presence of a dedicated Scrum Master and the frequency with which Agile practices are carried out by the team.
+
+Sprint planning combines individual and collective decision-making. Individual team members form estimates, while the commitment is a group outcome shaped by discussion, seniority and facilitation; vocal or senior members can disproportionately influence that outcome~\cite{zacek2024improvements}. This distinction matters for this thesis: an AI-suggested figure can act on each individual's estimate as an anchor, while the facilitator influences how individual judgements are combined into a commitment. The study interviewed individuals about this collective process, a limitation discussed in Section~\ref{sec:validity}.
 
 Facilitation is the Scrum Master activity most directly relevant to this thesis. During sprint planning, the Scrum Master structures the session, manages the flow of discussion, and mediates between different sources of input. The Scrum Master's authority to decide what information enters the planning session and how it is framed makes this role a natural mediator between AI tool output and team reasoning. This thesis examines how experienced Scrum Masters describe navigating this mediating function in AI-assisted planning contexts.
 
@@ -284,21 +293,21 @@ Table~\ref{tab:relatedwork} summarises the reviewed literature along the dimensi
 \caption{Summary of related work and research gap}
 \label{tab:relatedwork}
 \centering
-\begin{tabular}{p{3.5cm} p{1.8cm} p{1.8cm} p{2cm} p{2.3cm}}
+\begin{tabular}{p{4.2cm} p{2.2cm} p{2.2cm} p{2.4cm}}
 \toprule
-Study & Agile context & Cognitive bias & Trust calibration & Practitioner model \\
+Study & Agile context & Cognitive bias & Trust calibration \\
 \midrule
-Aman et al.~\cite{aman2025systematic} & No & No & Yes & No \\
-Emmanouilidis et al.~\cite{emmanouilidis2025co} & No & No & Partial & No \\
-Klieger et al.~\cite{klieger2024chatcollab} & No & No & Partial & No \\
-Muneer~\cite{muneer2025leveraging} & Yes & No & No & No \\
-Hamza et al.~\cite{hamza2025agile} & Yes & No & Partial & No \\
-Mohanani et al.~\cite{mohanani2018cognitive} & Partial & Yes & No & No \\
-Dubey et al.~\cite{dubey2020haco} & No & No & Yes & No \\
-Cabrero-Daniel et al.~\cite{cabrero2024exploring} & Yes & No & Partial & No \\
-Alhubaishy~\cite{alhubaishy2026exploring} & Partial & No & Yes & No \\
-Brandas et al.~\cite{brandas2026social} & No & No & Partial & No \\
-Tsihrintzis et al.~\cite{tsihrintzis2025virtsi} & Partial & No & Yes & No \\
+Aman et al.~\cite{aman2025systematic} & No & No & Yes \\
+Emmanouilidis et al.~\cite{emmanouilidis2025co} & No & No & Partial \\
+Klieger et al.~\cite{klieger2024chatcollab} & No & No & Partial \\
+Muneer~\cite{muneer2025leveraging} & Yes & No & No \\
+Hamza et al.~\cite{hamza2025agile} & Yes & No & Partial \\
+Mohanani et al.~\cite{mohanani2018cognitive} & Partial & Yes & No \\
+Dubey et al.~\cite{dubey2020haco} & No & No & Yes \\
+Cabrero-Daniel et al.~\cite{cabrero2024exploring} & Yes & No & Partial \\
+Alhubaishy~\cite{alhubaishy2026exploring} & Partial & No & Yes \\
+Brandas et al.~\cite{brandas2026social} & No & No & Partial \\
+Tsihrintzis et al.~\cite{tsihrintzis2025virtsi} & Partial & No & Yes \\
 
 \bottomrule
 \end{tabular}
@@ -322,6 +331,8 @@ We chose a qualitative empirical design because the phenomena we investigate, co
 We want to be transparent about our positionality as researchers. Both of us are MSc students in software engineering. We have studied AI tools and Agile methods academically, but neither of us has worked professionally as a Scrum Master, Product Owner, or Agile delivery lead, and neither has used an AI-assisted sprint planning tool in a real production environment. We approached this study as informed outsiders. Outsider status does not remove our assumptions; it moves them into the research instrument. The vignettes, the sensitising concepts drafted before data collection and the HACO lens all reflect our theoretical commitments, and they shaped both what participants were asked about and how their answers were coded. The risk of the outsider position is that we may misread practitioner language or miss context that an insider would catch. We addressed this through participant validation activities and through systematic coding using explicit codebook definitions applied consistently across all transcripts, helping to surface and resolve interpretive ambiguities before they became embedded in the analysis~\cite{braun2006using, creswell2013}.
 
 Semi-structured interviews were selected as the primary instrument. We considered alternative approaches including direct observation of sprint planning sessions, quasi-experimental designs with teams, and artefact-based case studies, but ruled these out due to access constraints and the exploratory nature of the research questions~\cite{creswell2013}. The vignette approach provides a methodologically sound alternative to direct self-report for studying cognitive bias~\cite{aguinis2014best, nisbett1977telling}, and the verbal reasoning it elicits provides observable evidence of reasoning patterns relevant to the cognitive processes under investigation. Nisbett and Wilson~\cite{nisbett1977telling} demonstrated that people consistently cannot accurately report the cognitive processes driving their own behaviour. Asking participants directly whether they experience anchoring bias would therefore produce unreliable data. Placing participants in a concrete scenario and observing their verbal reasoning reveals patterns consistent with documented bias mechanisms without relying on self-report. This is the specific methodological justification for embedding vignettes within the semi-structured interview format, following best practice recommendations for vignette methodology in organisational research~\cite{aguinis2014best}.
+
+The study used vignettes as an elicitation technique embedded within semi-structured qualitative interviews, not as a standalone experimental vignette study. Part~1 elicited accounts of real practice; Part~2 elicited reasoning about hypothetical situations; Part~3 elicited trust conditions and preferred future arrangements. We followed Aguinis and Bradley's ecological validity guidance for scenario design~\cite{aguinis2014best}, but did not manipulate experimental conditions or make causal comparisons between groups.
 
 \section{Alternative Research Methods}
 
@@ -471,7 +482,7 @@ P4, 22:28 [Part 2, Vignette B, Q9]: ``The developers [sic] confidence carries re
 \midrule
 P6, 22:07 [Part 3]: ``The explanation needs to be a sentence, maybe 2. [\ldots] That's enough. I don't need the [model] weights'' & transparency of reasoning drives trust & C1: Transparency drives trust \\
 \midrule
-P4, 23:48 [Part 2, Vignette B, Q10]: ``In the retrospect, the tool was picking up something real''; the story had run about 45\% over estimate & trust updated by AI being correct when team dismissed it & C2: Track record drives trust \\
+P4, 23:48 [Part 2, Vignette B, Q9 follow-up]: ``In the retrospect, the tool was picking up something real''; the story had run about 45\% over estimate & trust updated by AI being correct when team dismissed it & C2: Track record drives trust \\
 \midrule
 P9, 13:00 [Part 2, Vignette B, Q9]: ``We should definitely take the inputs from AI, but human should be the final one to decide'' & final commitment must remain with team & C3: Human final authority \\
 \midrule
@@ -513,6 +524,7 @@ The model was then constructed by combining recurring participant accounts, the 
   \item \textbf{Interaction principles} 1, 2, 3 and 5 are data-derived from codes A3, C1, B2 and C3 respectively. Principle~4 is partly normative: it is supported by two of eight Vignette~B participants and is retained for the reasons given in Section~\ref{sec:model}.
   \item \textbf{Risk checklist} items are derived from interview accounts, several of them from Part~1 accounts of real planning that fall outside the twelve codes. Items 12 and 13 were proposed as checklist items by validators and are also supported by interview accounts. Appendix~\ref{app:checklist_evidence} lists the supporting excerpts, timestamps and source type for every item.
 \end{itemize}
+Several components are also what the study's a priori framing would lead one to expect: a focus on anchoring suggests withholding the figure, calibrated trust suggests transparency, and an aim of preserving human oversight suggests human final authority. The interview data show that practitioners described these practices and gave reasons for them; they do not show that the components arose independently of that framing.
 
 P6 said [Part 3, Q17, 22:32]: \textit{``The AI stays outside the planning room. It does its work beforehand, surfaces patterns, flag risks, give me context, and then I decide what's relevant enough to bring it to the session.''} P8 said [Part 3, Q17, 25:38]: \textit{``It comes to me and I decide what's more worth bringing into the room and how to frame it.''} These accounts describe three distinct spaces: what the AI does before the session, what the facilitator does between AI output and the team, and what the team decides alone. The zone structure reflects these three layers.
 
@@ -581,7 +593,7 @@ Concern about anchoring was raised by all five Scrum Masters (P3, P4, P6, P7, P8
 
 In response to Vignette~A, P6 gave the clearest articulation [Part 2, Vignette A, Q5, 9:54]: \textit{``people don't process the AI suggest [sic] 42 as a data point. They process it as a reference.''} P3 described a similar concern when asked how they would bring the recommendation into the room [Part 2, Vignette A, Q5 follow-up, 19:48]: \textit{``Once a specific number is out there, it is like very hard for people to think past that.''} P4 drew on facilitation experience when responding to the scenario [Part 2, Vignette A, Q5, 16:27]: \textit{``I'm aware from the experience that putting a number in the room early shapes the conversation in ways that are hard to undo.''}
 
-All five Scrum Masters also described real situations in which a figure shaped their team's planning, although the figure was not always produced by an AI tool. P7's team had piloted an AI planning assistant [Part 1, Q4 follow-up, 10:47]: \textit{``The recommendation landed in the team Slack channel the morning before planning, which meant everyone came into the room having already seen it.''} Moving it later did not solve the problem: \textit{``it still ended up anchoring things.''} P8 had shared a capacity tool's figure in the early weeks of using it [Part 1, Q4 follow-up, 6:20]: \textit{``I tried it once in the early weeks and noticed the estimates started clustering around whatever the tool has suggested.''} P4 described showing a velocity chart from LinearB [Part 2, Vignette A, follow-up, 21:12]: \textit{``I put up a chart showing we had 40 points in each of the last three sprints. The team went into estimation clearly aiming for 40. {[}\ldots{]} They committed to 41 and had a difficult sprint.''} P3 described a velocity spreadsheet shown at the start of every session [Part 2, Vignette A, follow-up, 25:24]: \textit{``It's not present as a target, but it basically works like one.''} P6 described a product owner who opened planning with a target [Part 1, 7:13]: \textit{``So he framed it as a target and not as a reference. The team would work backwards from 40.''} In P3's, P4's and P6's accounts the anchor came from a data tool or a person rather than an AI recommendation, so these accounts show that participants had seen figures anchor their teams, not that AI recommendations did so in every case.
+All five Scrum Masters also described real situations in which a figure shaped their team's planning, although the figure was not always produced by an AI tool. P7's team had piloted an AI planning assistant [Part 1, Q4 follow-up, 10:47]: \textit{``The recommendation landed in the team Slack channel the morning before planning, which meant everyone came into the room having already seen it.''} Moving it later did not solve the problem: \textit{``it still ended up anchoring things.''} P8 had shared a capacity tool's figure in the early weeks of using it [Part 1, Q4 follow-up, 6:20]: \textit{``I tried it once in the early weeks and noticed the estimates started clustering around whatever the tool has suggested.''} P4 described showing a velocity chart from LinearB [Part 2, Vignette A, unscripted follow-up after Q7, 21:12]: \textit{``I put up a chart showing we had 40 points in each of the last three sprints. The team went into estimation clearly aiming for 40. {[}\ldots{]} They committed to 41 and had a difficult sprint.''} P3 described a velocity spreadsheet shown at the start of every session [Part 2, Vignette A, unscripted follow-up after Q7, 25:24]: \textit{``It's not present as a target, but it basically works like one.''} P6 described a product owner who opened planning with a target [Part 1, unscripted follow-up after Q3, 7:13]: \textit{``So he framed it as a target and not as a reference. The team would work backwards from 40.''} In P3's, P4's and P6's accounts the anchor came from a data tool or a person rather than an AI recommendation, so these accounts show that participants had seen figures anchor their teams, not that AI recommendations did so in every case.
 
 The three participants in other roles who answered Vignette~A reasoned from the AI figure (A2). P2, who reported no direct AI planning-tool experience, said [Part 2, Vignette A, Q5, 14:36]: \textit{``34 out of 42 is 80\%{[}\ldots{]} I feel comfortable just taking on{[}\ldots{]} I would still shoot for to complete all 42.''} P1 proposed a middle ground [Part 2, Vignette A, Q5, 38:13]: \textit{``Maybe we can take another five, six points and see how it goes in the next sprint.''} P9 began by questioning the recommendation but also arrived at a figure between the two numbers [Part 2, Vignette A, Q5, 10:45]: \textit{``we should be sensible enough to arrive at somewhere between 38 to 40.''} In each case the AI figure became a starting point from which reasoning adjusted. Because the vignette asks participants to evaluate the figure, these responses are consistent with anchoring rather than evidence that it occurred (Section~\ref{sec:validity}). P5 did not adjust from the figure and said they would first question the basis of the recommendation [Part 2, Vignette A, Q5, 29:45].
 
@@ -606,9 +618,9 @@ Algorithm aversion risk: dismissal without engagement & P4, P7 (real incidents r
 
 Responses to Vignette~B revealed reasoning patterns relevant to algorithm aversion risk~\cite{dietvorst2015algorithm}. As noted in the methodology, the scenario operationalises the dismissal-without-engagement pattern rather than the strict experimental condition of prior observed algorithm error. Rather than outright rejection, experienced practitioners showed calibrated scepticism, questioning the AI tool's pattern-matching basis before accepting or rejecting a recommendation.
 
-P6 offered a contextual challenge to the AI tool's evidence base [Part 2, Vignette B, Q9, 13:27]: P6 argued that AI pattern matching on similar stories can be misleading because a story that resembles past ones on the surface may involve a completely different infrastructure, which the AI tool cannot know. This is a legitimate challenge to the evidence base, not straightforward aversion.
+P6 offered a contextual challenge to the AI tool's evidence base [Part 2, Vignette B, Q9, 13:27]: \textit{``A story that looks similar on the surface may be touching a completely different infrastructure.''} This is a legitimate challenge to the evidence base, not straightforward aversion.
 
-No participant displayed B1 in their own Vignette~B response. The evidence for the pattern comes from two real incidents recounted during Vignette~B follow-up questions. P4 described a case in which a developer rejected an AI warning [Part 2, Vignette B, Q10, 23:30]: \textit{``the developer pushed back the AI warning and the team sided with him. We kept the original estimate. The story ran about like, I would say, 45\% over.''} P4 reflected [23:48]: \textit{``In the retrospect, the tool was picking up something real,''} and said the experience changed their facilitation approach. P7 described an incident from their team's AI pilot [Part 2, Vignette B, Q10, 40:29]: the tool flagged a story as high risk, and the assigned developer, \textit{``very experienced and knew that part of the system for years,''} \textit{``pushed back hard''}; \textit{``the team sided with him and we kept the original estimate anyway,''} and \textit{``the story took roughly double the time.''} In both incidents the participant describes the pattern in others, not in their own reasoning.
+No participant displayed B1 in their own Vignette~B response. The evidence for the pattern comes from two real incidents recounted during Vignette~B follow-up questions. P4 described a case in which a developer rejected an AI warning [Part 2, Vignette B, Q9 follow-up, 23:30]: \textit{``the developer pushed back the AI warning and the team sided with him. We kept the original estimate. The story ran about like, I would say, 45\% over.''} P4 reflected [Part 2, Vignette B, Q9 follow-up, 23:48]: \textit{``In the retrospect, the tool was picking up something real,''} and said the experience changed their facilitation approach. P7 described an incident from their team's AI pilot [Part 2, Vignette B, Q10, 40:29]: the tool flagged a story as high risk, and the assigned developer, \textit{``very experienced and knew that part of the system for years,''} \textit{``pushed back hard''}; \textit{``the team sided with him and we kept the original estimate anyway,''} and \textit{``the story took roughly double the time.''} In both incidents the participant describes the pattern in others, not in their own reasoning.
 
 The three participants outside the Scrum Master role who received Vignette~B sided partly or fully with the developer, for reasons that fall outside the B1 and B4 definitions. P2 argued that the long-term learning value of letting the developer own the estimate outweighed one story's accuracy, while accepting that the AI tool might be right [Part 2, Vignette B, Q9, 18:20]. P1 said they would err on the side of caution and add time to examine the AI tool's concern [Part 2, Vignette B, Q9, 40:40]. P9 said [Part 2, Vignette B, Q9, 12:29]: \textit{``the developer knows better. He has previously worked on a similar task. So even if the AI is recommending something, we should find a middle ground, but developer should have the better say compared to AI.''} P9's response is the closest to the dismissal pattern in the data, but it still seeks a middle ground rather than dismissing the flag. None of the three responses is coded B1 or B4. All five Scrum Masters, by contrast, described asking both the developer and the tool for their basis (B2).
 
@@ -623,7 +635,7 @@ Anchoring-related reasoning appeared as \textit{reference-point adjustment}: whe
 
 Participants proposed \textit{number withholding} as a mitigation: all five Scrum Masters described keeping the AI tool's figure private until after team estimation. P8 [Part 2, Vignette A, Q5, 9:43]: \textit{``My instinct would have been not to put the numbers in the room before the team has estimated.''} P7 [Part 2, Vignette A, Q5, 17:30]: \textit{``I would not present the number before the team has done their own estimates.''} P3 [Part 2, Vignette A, Q5, 18:54]: \textit{``I would look at it privately before the session.''}
 
-Three of the five described a comparable practice in their own teams. P8 stopped sharing the capacity tool's figure after seeing estimates cluster around it [Part 2, Vignette A, follow-up, 12:49]: \textit{``Once I stopped sharing it up front, the estimates felt more genuine and deliberate.''} P7 described keeping historical velocity data to themselves during planning [Part 1, Q2, 2:38]: \textit{``I also have the historical velocity data in front of me, but I'll try not to be the one who names the number.''} P3 asked the engineer who maintained the team's velocity spreadsheet to show it only after the first round of estimates, which P3 said had helped [Part 2, Vignette A, follow-up, 25:38]. P4, by contrast, still shows a velocity chart at the start of planning and was unsure whether it anchors the team [Part 1, Q4 follow-up, 12:30]. Only P8's practice concerns an AI tool's figure; P3's and P7's concern figures from other planning data.
+Three of the five described a comparable practice in their own teams. P8 stopped sharing the capacity tool's figure after seeing estimates cluster around it [Part 2, Vignette A, unscripted follow-up after Q7, 12:49]: \textit{``Once I stopped sharing it up front, the estimates felt more genuine and deliberate.''} P7 described keeping historical velocity data to themselves during planning [Part 1, Q2, 2:38]: \textit{``I also have the historical velocity data in front of me, but I'll try not to be the one who names the number.''} P3 asked the engineer who maintained the team's velocity spreadsheet to show it only after the first round of estimates, which P3 said had helped [Part 2, Vignette A, unscripted follow-up after Q7, 25:38]. P4, by contrast, still shows a velocity chart at the start of planning and was unsure whether it anchors the team [Part 1, Q4 follow-up, 12:30]. Only P8's practice concerns an AI tool's figure; P3's and P7's concern figures from other planning data.
 
 The number-withholding practice is one of the most consistent findings of this study. The five Scrum Masters described it separately, and three of them described a comparable practice in their own teams, although the consent information sheet had disclosed the study's focus on cognitive bias (Section~\ref{sec:limitations}).
 
@@ -631,7 +643,7 @@ The number-withholding practice is one of the most consistent findings of this s
 
 The dismissal-without-engagement pattern was described as manifesting primarily as \textit{developer authority assertion}: invoking domain expertise to dismiss an AI tool flag without articulating a specific basis for doing so, as in the incidents recounted by P4 and P7.
 
-All five Scrum Masters described challenging this pattern in their vignette responses by asking both sources for their basis (B2). P3 [Part 2, Vignette B, Q9, 28:33]: \textit{``Can you just tell us what makes this one particularly different from the stories the tool is pointing to?''} P8 [Part 2, Vignette B, Q9 follow-up, 16:04]: \textit{``I still want them to articulate the specific differences.''} P4 [Part 2, Vignette B, Q9, 22:28] described asking the developer to walk through what makes the current story different from the ones the tool is drawing on. (Paraphrase used; automated transcript has a grammatical error at this point.) P7 [Part 2, Vignette B, Q9, 37:02]: \textit{``my job is to make sure that the team has examined both inputs properly and not to decide which is right.''}
+All five Scrum Masters described challenging this pattern in their vignette responses by asking both sources for their basis (B2). P3 [Part 2, Vignette B, Q9, 28:33]: \textit{``Can you just tell us what makes this one particularly different from the stories the tool is pointing to?''} P8 [Part 2, Vignette B, Q9 follow-up, 16:04]: \textit{``I still want them to articulate the specific differences.''} P4 [Part 2, Vignette B, Q9, 23:05]: \textit{``So I try not to let either the tool or the developer off the hook without understanding the reasoning.''} P7 [Part 2, Vignette B, Q9, 37:02]: \textit{``my job is to make sure that the team has examined both inputs properly and not to decide which is right.''}
 
 A secondary manifestation was \textit{pattern match scepticism}: questioning whether the AI tool's historical patterns apply to the current context. P8 described checking whether the AI tool was drawing on data from when the team was smaller and the codebase less stable [Part 2, Vignette B, Q9, 14:24]. This is calibrated scepticism that engages with the evidence rather than dismissing it outright.
 
@@ -657,9 +669,9 @@ Pattern match scepticism & P3, P4, P6, P7, P8 (5/8) & Part 2 Vignette B \\
 
 \subsection{Conditions described as driving trust}
 
-Across the interviews, \textit{transparency of reasoning} was the most consistently identified trust condition, described by all nine participants. Participants consistently described AI tool recommendations that explained their basis as more trustworthy than those providing output only. P6 described transparency as non-negotiable; P7 called it table stakes.
+Across the interviews, \textit{transparency of reasoning} was the most consistently identified trust condition, described by all nine participants. Participants consistently described AI tool recommendations that explained their basis as more trustworthy than those providing output only. P6 called it \textit{``Non-negotiable''} [Part 3, Q14, 21:25], and P7 said \textit{``So table stakes, I won't bring a tool into the planning room that I can't explain''} [Part 3, Q14, 58:30].
 
-P6 was specific about what level of explanation was sufficient [Part 3, Q14, 22:07]: \textit{``The explanation needs to be a sentence, maybe 2. [\ldots] That's enough. I don't need the [model] weights.''} P3 [Part 2, Vignette B, Q11, 30:42] said the tool would gain credibility if it could show specifically which past stories it was drawing on and what had gone wrong with them. (Minor automated-transcript filler removed; substance retained.) P2 said visible reasoning could expose embedded biases or assumptions and allow those assumptions to be corrected or updated [Part 3, Q14, 20:59]. (Paraphrase used; P2 qualified this as hypothetical because they had no direct AI-tool experience.)
+P6 was specific about what level of explanation was sufficient [Part 3, Q14 follow-up, 22:07]: \textit{``The explanation needs to be a sentence, maybe 2. [\ldots] That's enough. I don't need the [model] weights.''} Asked what would make the tool's warning more credible, P3 said [Part 2, Vignette B, Q11, 30:42]: \textit{``Maybe if it could show me specifically like which past stories it's drawing on and what actually went wrong with them.''} P2, who had no AI planning-tool experience, compared having reasoning with having none [Part 3, Q14, 20:59]: \textit{``Because it also exposes if there are some biases and assumptions baked in there. Yeah, so I prefer that over not having reasoning.''} P2 added that such assumptions could then be corrected, ending on a tentative \textit{``right?''}, so P2's answer expresses a preference for visible reasoning rather than an experience of trusting it.
 
 Transparency enables calibration. Practitioners can only assess whether an AI tool's evidence applies to their specific context if they can see what that evidence is.
 
@@ -671,9 +683,9 @@ Transparency enables calibration. Practitioners can only assess whether an AI to
 
 Distrust was most commonly described as triggered by three conditions.
 
-The first was recommendations without explanation [Part 3], described by P2, P4, P6, P7 and P8. P6 described a black box recommendation as creating false authority without a counter argument: if the AI tool cannot explain why it is flagging something, the facilitator has no way to assess whether the flag is relevant to the current context. Trust requires something to calibrate against; a number without a basis gives nothing to calibrate against.
+The first was recommendations without explanation [Part 3], described by P2, P4, P6, P7 and P8. P6 said that a black-box recommendation in a planning session \textit{``creates false authority''} [Part 3, Q14, 21:25]: if the AI tool cannot explain why it is flagging something, the facilitator has no way to assess whether the flag is relevant to the current context. Trust requires something to calibrate against; a number without a basis gives nothing to calibrate against.
 
-The second was perceived inapplicability of historical patterns [Part 2, Vignette B; Part 3]. P8 described actively checking whether the AI tool was drawing on data from when the team was smaller and the codebase less stable. When practitioners suspect the AI's historical data no longer reflects current conditions, trust drops because the recommendation may be based on a context that no longer exists.
+The second was perceived inapplicability of historical patterns [Part 2, Vignette B; Part 3]. P8 described checking whether the AI tool was drawing on data from when the team was smaller [Part 2, Vignette B, Q9, 14:24]: \textit{``Two years ago when the team was smaller and {[}\ldots{]} code base was less stable, the context matters.''} When practitioners suspect the AI's historical data no longer reflects current conditions, trust drops because the recommendation may be based on a context that no longer exists.
 
 The third was lack of experience with the tool, which leaves trust uncalibrated rather than low. P3 said they would want to try a tool privately \textit{``for a sprint or two''} before bringing it to the team [Part 1, Q4 follow-up, 10:50], and P9, whose team was only starting to use AI tools, had not yet seen a tool conflict with a team member's judgement [Part 2, Vignette B, Q10, 13:52].
 
@@ -715,7 +727,7 @@ The conceptual model was constructed from the thematic findings of RQ1 and RQ2. 
 
 \textbf{Zone 2, Human-AI dialogue facilitated by the Scrum Master:} Tasks where the AI tool provides data and the facilitator provides context. AI tool output is not shared directly with the team but used by the facilitator to structure discussion. These include interpreting AI tool risk flags, assessing whether historical patterns apply to current stories, story prioritisation where the AI tool provides data and the facilitator frames the question, and post-estimation comparison.
 
-\textbf{Zone 3, Human only, final decisions:} Tasks requiring knowledge the AI tool cannot access or carrying accountability implications that must remain with humans. These include the final sprint commitment, override decisions with explicit justification, individual performance and capacity judgements, and decisions requiring knowledge of recent changes not reflected in the AI tool's data. Asked how the facilitator role changes as AI tools become more capable, P8 said [Part 3, 27:12]: \textit{``Judgement doesn't come from the tool, it comes from knowing the team, knowing the context and being present in the room.''}
+\textbf{Zone 3, Human only, final decisions:} Tasks requiring knowledge the AI tool cannot access or carrying accountability implications that must remain with humans. These include the final sprint commitment, override decisions with explicit justification, individual performance and capacity judgements, and decisions requiring knowledge of recent changes not reflected in the AI tool's data. Asked how the facilitator role changes as AI tools become more capable, P8 said [Part 3, unscripted follow-up after Q17, 27:12]: \textit{``Judgement doesn't come from the tool, it comes from knowing the team, knowing the context and being present in the room.''}
 
 \subsection{Component 2: Interaction Principles}
 
@@ -727,9 +739,9 @@ The relationship between Principle~1 and planning poker deserves direct engageme
 
 \textbf{Principle 3, examine both signals:} When the AI tool and a developer disagree, neither is dismissed without examination. The facilitator asks both sources to articulate their basis. P8 [Part 2, Vignette B, Q9 follow-up, 15:27]: \textit{``we got two signals pointing in different directions. Let's spend 2 minutes making sure {[}\ldots{]} we understand both before we move on.''} All five Scrum Masters described this safeguard in their Vignette~B responses (5/8, code B2); P4 put it most directly [Part 2, Vignette B, Q9, 22:28]: \textit{``My instinct is to ask both the tool and the developer to be more specific.''}
 
-\textbf{Principle 4, explicit override justification:} When the team overrides an AI tool recommendation, the reason must be stated concretely. Not ``the tool does not know our codebase'' but ``the tool is drawing on stories from two years ago before we refactored the legacy module.'' This applies equally when a recommendation is set aside by simply not applying it, a case P4 raised during validation.
+\textbf{Principle 4, explicit override justification:} When the team overrides an AI tool recommendation, the reason must be stated concretely. Not ``the tool does not know our codebase'' but ``the tool is drawing on stories from two years ago before we refactored the legacy module.'' This applies equally when a recommendation is set aside by simply not applying it. P4 raised this during validation: ``Might be worth making sure the principle covers overriding the tool as much as overriding a person'' (Appendix~\ref{app:validation}).
 
-Principle~4 has the weakest evidential base of the five principles, with two of eight Vignette~B participants describing explicit override reasons as a deliberate practice: P7 [Part 2, Vignette B, follow-up, 39:35] and P8 [Part 3, 22:09]. Its inclusion in the model requires justification. Two arguments support it. First, the underlying behaviour (requiring articulated evidence before accepting an override) appears more broadly across the B4 codes in the data. Second, a model that addresses the gap between observed and appropriate behaviour is more useful than one that only reflects the most common behaviour. The evidence count of 2/8 (Vignette B participants) is stated transparently so readers can assess the principle's grounding themselves.
+Principle~4 has the weakest evidential base of the five principles, with two of eight Vignette~B participants describing explicit override reasons as a deliberate practice: P7 [Part 2, Vignette B, unscripted follow-up after Q9, 39:35] and P8 [Part 3, Q13 follow-up, 22:09]. Its inclusion in the model requires justification. Two arguments support it. First, the underlying behaviour (requiring articulated evidence before accepting an override) appears more broadly across the B4 codes in the data. Second, a model that addresses the gap between observed and appropriate behaviour is more useful than one that only reflects the most common behaviour. The evidence count of 2/8 (Vignette B participants) is stated transparently so readers can assess the principle's grounding themselves.
 
 \textbf{Principle 5, human final authority:} The final sprint commitment is always made by the team. The AI tool informs; humans decide. This was stated by eight of nine participants (code C3), in Part~2 and Part~3 responses. P2 was the exception: asked who should have the final say, P2 answered that the team's process should, accepted that an AI recommendation could be adopted if discussion supported it, and named only individual feedback as a decision AI should not make [Part 2, Vignette A, Q8, 16:26; Part 3, Q15, 22:08]. P9 [Part 2, Vignette B, Q9, 13:00]: \textit{``We should definitely take the inputs from AI, but human should be the final one to decide.''} During validation, P6 extended the principle: the reasoning behind the commitment, not only the commitment itself, must remain the team's.
 
@@ -765,27 +777,27 @@ Figure~\ref{fig:model} functions as a process map for a sprint planning facilita
 \centering
 \footnotesize
 \begin{tikzpicture}[
-  font=\scriptsize,
+  font=\footnotesize,
   every node/.style={inner sep=3pt},
-  zone/.style={draw, rounded corners=2pt, fill=gray!8, align=center, text width=3.2cm, minimum height=3.05cm, anchor=north},
-  prin/.style={draw, rounded corners=2pt, fill=gray!8, align=center, text width=1.75cm, minimum height=2.2cm, anchor=north},
+  zone/.style={draw, rounded corners=2pt, fill=gray!8, align=center, text width=3.45cm, minimum height=3.6cm, anchor=north},
+  prin/.style={draw, rounded corners=2pt, fill=gray!8, align=center, text width=1.95cm, minimum height=2.45cm, anchor=north},
   lst/.style={draw, rounded corners=2pt, align=left, text width=5.2cm, anchor=north},
   hd/.style={font=\bfseries\footnotesize}
 ]
 \node[hd] (h1) at (0,0) {Component 1: Role zones};
-\node[zone, below=3mm of h1] (z2) {\textbf{Zone 2: Facilitator-mediated dialogue}\\ \textit{Facilitator reviews AI output privately}\\[3pt] Interprets flags, judges applicability, frames questions, post-estimation comparison};
-\node[zone, below=3mm of h1, xshift=-3.85cm] (z1) {\textbf{Zone 1: AI analytical support}\\ \textit{Before the session; not visible to the team}\\[3pt] Velocity trends, risk flags from past overruns, complexity flags, vague backlog items};
-\node[zone, below=3mm of h1, xshift=3.85cm] (z3) {\textbf{Zone 3: Human only}\\ \textit{Final decisions}\\[3pt] Sprint commitment, overrides with stated reasons, performance and capacity judgements};
+\node[zone, below=3mm of h1] (z2) {\textbf{Zone 2:}\\ \textbf{Facilitator-mediated dialogue}\\ \textit{Facilitator reviews AI output privately}\\[3pt] Interprets flags, judges applicability, frames questions, post-estimation comparison};
+\node[zone, below=3mm of h1, xshift=-3.95cm] (z1) {\textbf{Zone 1:}\\ \textbf{AI analytical}\\ \textbf{support}\\ \textit{Before the session; not visible to the team}\\[3pt] Velocity trends, risk flags from past overruns, complexity flags, vague backlog items};
+\node[zone, below=3mm of h1, xshift=3.95cm] (z3) {\textbf{Zone 3:}\\ \textbf{Human only}\\ \textit{Final decisions}\\[3pt] Sprint commitment, overrides with stated reasons, performance and capacity judgements};
 \draw[->, >=stealth, thick] (z1) -- (z2);
 \draw[->, >=stealth, thick] (z2) -- (z3);
 
 \node[hd, below=5mm of z2] (h2) {Component 2: Interaction principles};
 \node[prin, below=3mm of h2] (p3) {\textbf{IP3}\\ Examine both signals\\[3pt] 5/8 (B2)};
-\node[prin, below=3mm of h2, xshift=-4.6cm] (p1) {\textbf{IP1}\\ Number withholding\\[3pt] 5/9 (A3)};
-\node[prin, below=3mm of h2, xshift=-2.3cm] (p2) {\textbf{IP2}\\ Reasoning transparency\\[3pt] 9/9 (C1)};
-\node[prin, below=3mm of h2, xshift=2.3cm] (p4) {\textbf{IP4}\\ Explicit override reason\\[3pt] 2/8 (partly normative)};
-\node[prin, below=3mm of h2, xshift=4.6cm] (p5) {\textbf{IP5}\\ Human final authority\\[3pt] 8/9 (C3)};
-\node[below=1.5mm of p3, align=center, text width=10cm, font=\tiny] (note) {Counts are participants coded out of the applicable denominator (Vignette~B: $n=8$). Principles are numbered, not ranked.};
+\node[prin, below=3mm of h2, xshift=-4.7cm] (p1) {\textbf{IP1}\\ Number with\-holding\\[3pt] 5/9 (A3)};
+\node[prin, below=3mm of h2, xshift=-2.35cm] (p2) {\textbf{IP2}\\ Reasoning transparency\\[3pt] 9/9 (C1)};
+\node[prin, below=3mm of h2, xshift=2.35cm] (p4) {\textbf{IP4}\\ Explicit override reason\\[3pt] 2/8 (partly normative)};
+\node[prin, below=3mm of h2, xshift=4.7cm] (p5) {\textbf{IP5}\\ Human final authority\\[3pt] 8/9 (C3)};
+\node[below=1.5mm of p4.south -| p3, align=center, text width=10cm, font=\tiny] (note) {Counts are participants coded out of the applicable denominator (Vignette~B: $n=8$). Principles are numbered, not ranked.};
 
 \node[hd, below=3mm of note] (h3) {Component 3: Risk identification checklist};
 \node[lst, below=3mm of h3, xshift=2.85cm] (mo) {\textbf{Moderate risk}\\[2pt]
@@ -876,7 +888,7 @@ The dismissal-without-engagement reasoning observed in vignette responses is mor
 
 This likely reflects the specific population. All participants were experienced practitioners with more than five years in Agile roles. Experienced practitioners may have developed more sophisticated approaches to evaluating AI recommendations precisely because they have enough domain knowledge to interrogate the tool's evidence base.
 
-The clearest evidence of dismissal without engagement comes from two recounted real incidents (P4 and P7). In both, an experienced developer asserted familiarity with the codebase, the team sided with the developer without examining the AI tool's evidence, and the story overran substantially (by about 45\% and about 100\% respectively). Both P4 and P7 said the experience changed how they facilitate such disagreements. No participant displayed B1 in their own Vignette~B response; most participants instead described calibrated scepticism.
+The clearest evidence of dismissal without engagement comes from two recounted real incidents (P4 and P7). In both, an experienced developer asserted familiarity with the codebase, the team sided with the developer without examining the AI tool's evidence, and the story overran substantially (by about 45\% and about 100\% respectively). Both P4 [Part 2, Vignette B, unscripted follow-up after Q9, 24:39] and P7 [Part 2, Vignette B, unscripted follow-up after Q10, 42:32] said the experience changed how they facilitate such disagreements. No participant displayed B1 in their own Vignette~B response; most participants instead described calibrated scepticism.
 
 \subsection{Trust calibration}
 
@@ -910,13 +922,13 @@ Lee and See's~\cite{lee2004trust} definition of calibrated trust provides the th
 
 The second structured validation round was conducted via email with P6, P8, and P4 during August--September 2026. Full responses are in Appendix~\ref{app:validation}. The following summarises the key findings from this round.
 
-All three participants considered the zone structure plausible, although its alignment with their current practice varied. P6 noted that ``before the session'' in Zone 1 must mean truly before, not merely silent in the room, since tools that are technically quiet but still visible during refinement can still be referenced live. P8 raised a related distinction between ambient tools (visible in Jira but not actively pushing a number) and actively-pushing tools, suggesting the model could make this distinction more explicit. P4 offered an honest assessment: Zone 1 describes where he aspires to be more than where he currently is, since he still shares the LinearB velocity chart directly with his team at the start of planning and has observed it anchoring them.
+All three participants considered the zone structure plausible, although its alignment with their current practice varied. P6 wrote: ``If anything I'd push you to be explicit in Zone 1 that `before the session' really means before, not just `not speaking directly to the team', I've seen tools that technically stay silent in the room but still get referenced live, which defeats the purpose.'' P8 drew a related distinction: ``So it's not quite `never speaks to the team', it's more like it's ambient rather than active.'' P4 wrote: ``Zone 1 describes where I'd like to be more than where I actually am. I still show the LinearB velocity chart directly to the team at the start of planning {[}\ldots{]}.''
 
-On the interaction principles, all three confirmed number withholding as the most important. P8 confirmed this from direct experience: he tested the opposite early on, shared the number before estimation, and watched estimates cluster around it; he stopped doing that and estimation became noticeably more independent. P6 raised a nuance on human final authority: it is not just the commitment that must stay human but the reasoning behind the commitment: if the AI shaped the reasoning, the team has not really made the call even if they technically said yes. P4 confirmed the examine-both-signals principle from a real incident where not doing this cost his team; a senior developer's assumption about the data model had changed, nobody pushed back due to his seniority, and the story ran over.
+On the interaction principles, all three agreed with number withholding, and P6 called it ``the one I care about most.'' P8 described testing the alternative: ``I actually tested the opposite early on, shared the number before estimation, and watched everyone's guesses cluster right around it. Stopped doing that and things got noticeably more honest.'' P4 agreed but added: ``I agree with Number withholding more than I live it.'' P6 extended human final authority: ``It's not just the commitment that needs to stay human, it's the reasoning behind the commitment.'' P4 supported the examine-both-signals principle with a real case: ``A developer who knew the domain well was confident based on an assumption about the data model that had actually changed, nobody on the team pushed back because he was senior, and the story ran way over.''
 
-P6 identified unacknowledged trust erosion as a risk not previously in the checklist: a tool can quietly lose credibility through repeated misses that go unremarked, without a formal decision to stop trusting it. P8 identified short-term availability blind spots as distinct from structural team composition change: one-off situations such as a team member on leave or a mid-sprint disruption are not visible to the AI tool and can make its recommendations systematically wrong for that period. Both were added to the checklist as moderate risk items 12 and 13 respectively.
+P6 proposed a new risk: ``Sometimes a tool just quietly loses credibility and people stop looking at it without ever deciding to stop trusting it, that happened with a burn-down tool on my team.'' P8 proposed another: ``I think there's something missing around short-term blind spots, someone on leave, a mid-sprint disruption, a week where the team's availability is just off.'' Both were added to the checklist as moderate risk items 12 and 13 respectively, and both are also supported by interview accounts (Appendix~\ref{app:checklist_evidence}).
 
-Both P6 and P8 independently raised a concern about checklist item 9 wording: confidence itself is not the risk; the risk is confidence that falls apart when asked to articulate its basis. The wording was updated to ``developer override asserted without articulated basis'' to reflect this.
+P6 and P8 both questioned the wording of checklist item 9. P6 wrote: ``Confidence itself isn't the risk in my experience, it's confidence that can't be articulated when asked.'' P8 wrote that ``confidence itself isn't the problem, it's confidence that falls apart the moment you ask someone to explain it.'' The wording was updated to ``developer override asserted without articulated basis'' to reflect this.
 
 Not every validator proposal was adopted. Table~\ref{tab:validation_disposition} lists each substantive proposal and how it was handled.
 
@@ -960,7 +972,7 @@ Three types of evidence were collected across the three interview parts, and the
 
 For the number-withholding practice, Part 2 vignette responses from all five Scrum Masters converge on the same practice, and three of them (P3, P7, P8) described a comparable practice in their own teams. All five also described real situations in which a figure anchored their team's planning. This convergence across evidence types is the strongest support available within this study's design, with two qualifications: the real-practice accounts mostly concern figures from planning data or people rather than AI recommendations (only P7's and P8's involved an AI tool), and all of the evidence comes from Scrum Masters.
 
-For the facilitator-as-mediator finding, the evidence comes primarily from Part 3 self-report, which carries Nisbett and Wilson's~\cite{nisbett1977telling} caveat about self-report validity. The finding is supported by the five Scrum Masters describing the same setup, but all five are describing what they believe should happen or aspire to do, and P4 confirmed during the validation round that he does not yet fully live this principle in practice. The finding is therefore presented as an aspirational model with strong practitioner endorsement rather than as a description of current widespread practice.
+For the facilitator-as-mediator finding, the evidence comes primarily from Part 3 self-report, which carries Nisbett and Wilson's~\cite{nisbett1977telling} caveat about self-report validity. The finding is supported by the five Scrum Masters describing the same setup, but all five are describing what they believe should happen or aspire to do, and P4 wrote during the validation round that ``Zone 1 describes where I'd like to be more than where I actually am.'' The finding is therefore presented as an aspirational model with strong practitioner endorsement rather than as a description of current widespread practice.
 
 For the dismissal-without-engagement pattern, the clearest evidence comes from two real incidents recounted during Vignette B follow-up questions (P4 and P7). No participant displayed B1 in their own vignette response. The pattern is therefore supported by two recounted incidents, which is a weaker evidential base than number withholding.
 
@@ -976,6 +988,8 @@ This study produced a conceptual model, not a deployable tool or a statistically
 The primary data source for most findings is vignette responses and Part 3 self-report. Vignette responses represent hypothetical reasoning about a described scenario. Whether participants' described practices match their actual behaviour in live planning sessions cannot be confirmed from this data alone. This is a structural limitation of the research design.
 
 The model was checked with participants in two rounds. The first (May 2026, with P6, P7 and P8) was informal, has no complete written record, and is given no evidential weight. The second (August--September 2026, with P6, P8 and P4) produced a written record (Appendix~\ref{app:validation}) and three refinements: checklist items 12 and 13 and the wording of item 9. Two threats limit what this round shows. First, it is circular: the validators are participants whose accounts informed the model, and P6's and P8's accounts supply several of its central quotations, so the round tests whether the model represents their views rather than whether it holds for other practitioners. Second, the outreach email mentioned that the examiner had asked for a clearer record of the validation, which may have encouraged agreeable responses. The finding that all three validators considered the zone structure plausible should be read within these limits; P4's response that the model describes where he would like to be rather than his current practice suggests that the validators did not simply endorse it.
+
+Coding was carried out by one researcher. The second researcher's consistency check covered five transcript excerpts, which is too few to test the application of all twelve codes; it sharpened the B1/B4 boundary in particular, but most code assignments rest on one researcher's judgement. All code assignments were re-checked against the transcripts for this version (Section~\ref{sec:analysis}), and the supporting excerpts are reported with timestamps so that readers can check them.
 
 The findings that underpin the model's central safeguard (the anchoring concern, number withholding and the facilitator-as-mediator arrangement) come from the five Scrum Masters only. The analysis was organised by the constructs around which the interview guide was built, so the three code groups correspond to the three parts of the guide (Section~\ref{sec:analysis}); themes cutting across interview parts were not developed.
 
