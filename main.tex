@@ -301,7 +301,7 @@ Study & Agile context & Cognitive bias & Trust calibration \\
 \midrule
 Aman et al.~\cite{aman2025systematic} & No & No & Yes \\
 Emmanouilidis et al.~\cite{emmanouilidis2025co} & No & No & Partial \\
-Klieger et al.~\cite{klieger2024chatcollab} & No & No & Partial \\
+Klieger et al.~\cite{klieger2024chatcollab} & No & No & No \\
 Muneer~\cite{muneer2025leveraging} & Yes & No & No \\
 Hamza et al.~\cite{hamza2025agile} & Yes & No & Partial \\
 Mohanani et al.~\cite{mohanani2018cognitive} & Partial & Yes & No \\
@@ -468,27 +468,27 @@ Transcript excerpt [Interview part] & Raw code & Codebook code \\
 \endhead
 \midrule
 \endfoot
-P6, 9:54 [Part 2, Vignette A]: ``people don't process the AI suggest [sic] 42 as a data point. They process it as a reference'' & number treated as reference not evidence & A1: Number-first contamination \\
+P6, 9:54 [Part 2, Vignette A, Q5]: ``people don't process the AI suggest [sic] 42 as a data point. They process it as a reference'' & number treated as reference not evidence & A1: Number-first contamination \\
 \midrule
-P2, 14:36 [Part 2, Vignette A]: ``34 out of 42 is 80\%{[}\ldots{]} I would still shoot for to complete all 42'' & reasons from AI figure not independently & A2: Reference-point adjustment \\
+P2, 14:36 [Part 2, Vignette A, Q5]: ``34 out of 42 is 80\%{[}\ldots{]} I would still shoot for to complete all 42'' & reasons from AI figure not independently & A2: Reference-point adjustment \\
 \midrule
-P7, 17:30 [Part 2, Vignette A]: ``I would not present the number before the team has done their own estimates'' & deliberate withholding of AI figure & A3: Number withholding safeguard \\
+P7, 17:30 [Part 2, Vignette A, Q5]: ``I would not present the number before the team has done their own estimates'' & deliberate withholding of AI figure & A3: Number withholding safeguard \\
 \midrule
-P4, 23:30--24:24 [Part 2, Vignette B follow-up]: P4 recounted that a developer rejected the AI warning, the team retained the original estimate without examining the historical evidence, and the story ran approximately 45\% over estimate. & team prioritises developer judgement without examining AI evidence & B1: Developer authority assertion \\
+P4, 23:30--24:24 [Part 2, Vignette B, Q9 follow-up]: P4 recounted that a developer rejected the AI warning, the team retained the original estimate without examining the historical evidence, and the story ran approximately 45\% over estimate. & team prioritises developer judgement without examining AI evidence & B1: Developer authority assertion \\
 \midrule
 P8, 15:27 [Part 2, Vignette B, Q9 follow-up]: ``we got two signals pointing in different directions. Let's spend 2 minutes making sure {[}\ldots{]} we understand both before we move on'' & facilitator requires both sources to articulate basis & B2: Examine both signals safeguard \\
 \midrule
-P6, 13:27 [Part 2, Vignette B]: ``A story that looks similar on the surface may be touching a completely different infrastructure'' & questions whether AI patterns apply to current context & B3: Pattern match scepticism \\
+P6, 13:27 [Part 2, Vignette B, Q9]: ``A story that looks similar on the surface may be touching a completely different infrastructure'' & questions whether AI patterns apply to current context & B3: Pattern match scepticism \\
 \midrule
 P4, 22:28 [Part 2, Vignette B, Q9]: ``The developers [sic] confidence carries real weight for me if they can articulate the basis for it'' & override accepted when a concrete basis is given & B4: Legitimate contextual dismissal \\
 \midrule
-P6, 22:07 [Part 3]: ``The explanation needs to be a sentence, maybe 2. [\ldots] That's enough. I don't need the [model] weights'' & transparency of reasoning drives trust & C1: Transparency drives trust \\
+P6, 22:07 [Part 3, Q14 follow-up]: ``The explanation needs to be a sentence, maybe 2. [\ldots] That's enough. I don't need the [model] weights'' & transparency of reasoning drives trust & C1: Transparency drives trust \\
 \midrule
 P4, 23:48 [Part 2, Vignette B, Q9 follow-up]: ``In the retrospect, the tool was picking up something real''; the story had run about 45\% over estimate & trust updated by AI being correct when team dismissed it & C2: Track record drives trust \\
 \midrule
 P9, 13:00 [Part 2, Vignette B, Q9]: ``We should definitely take the inputs from AI, but human should be the final one to decide'' & final commitment must remain with team & C3: Human final authority \\
 \midrule
-P6, 22:32 [Part 3]: ``The AI stays outside the planning room{[}\ldots{]} It's a research tool for the SM and not a participant in the planning'' & AI informs facilitator, facilitator decides what reaches team & C4: Facilitator as mediator \\
+P6, 22:32 [Part 3, Q17]: ``The AI stays outside the planning room{[}\ldots{]} It's a research tool for the SM and not a participant in the planning'' & AI informs facilitator, facilitator decides what reaches team & C4: Facilitator as mediator \\
 \midrule
 P8, 14:24 [Part 2, Vignette B, Q9]: ``Two years ago when the team was smaller and {[}\ldots{]} code base was less stable, the context matters'' & trust calibrated by assessing whether AI patterns apply to current conditions & C5: Contextual applicability assessment \\
 \bottomrule
@@ -712,7 +712,7 @@ Transparency of reasoning & Drives trust up & P1--P9 (9/9) & Part 2 + Part 3 \\
 Track record over time & Drives trust up & P3, P4, P5, P6, P7, P8 & Part 2 Vignette B + Part 3 \\
 Contextual applicability & Drives trust up & P3, P4, P6, P7, P8, P9 & Part 2 + Part 3 \\
 Recommendation without explanation of basis & Drives trust down & P2, P4, P6, P7, P8 & Part 3 \\
-Inapplicable historical patterns & Drives trust down & P3, P4, P6, P8, P9 & Part 2 + Part 3 \\
+Inapplicable historical patterns & Drives trust down & P3, P4, P6, P7, P8, P9 & Part 2 + Part 3 \\
 Lack of experience with the tool & Leaves trust uncalibrated & P3, P9 & Part 1 + Part 2 \\
 \bottomrule
 \end{tabular}
@@ -832,7 +832,7 @@ Figure~\ref{fig:model} functions as a process map for a sprint planning facilita
 \toprule
 Component & Description \\
 \midrule
-Role Zone 1 & AI analytical support before session: velocity analysis, risk flagging, preliminary complexity flagging, ungrouped backlog flagging \\
+Role Zone 1 & AI analytical support before session: velocity analysis, risk flagging, preliminary complexity flagging, flagging backlog items too vague to estimate \\
 Role Zone 2 & Human-AI dialogue: facilitator interprets AI tool signals, post-estimation comparison \\
 Role Zone 3 & Human only: final commitment, override decisions, performance judgement \\
 \midrule
